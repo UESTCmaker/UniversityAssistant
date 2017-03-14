@@ -4,8 +4,8 @@ const AV = require('libs/av-weapp.js');
 App({
   onLaunch: function () {
     AV.init({
-      appId: 'XXXXXXXXXXXXXXXXXXXXXXX',
-      appKey: 'XXXXXXXXXXXXXXXX',
+      appId: '0HpMBrIWwtuq9FSJXQihVqWj-gzGzoHsz',
+      appKey: 'GSDHU7Gfx6fCTIfewaKRSRv4',
     });
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
@@ -31,7 +31,6 @@ App({
     }
   },
   globalData: {
-    userInfo: null,
-    searchItem:""
+    userInfo: null
   }
 })

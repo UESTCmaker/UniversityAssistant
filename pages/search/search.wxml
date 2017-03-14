@@ -1,7 +1,7 @@
 <import src="search-item/search-item-template.wxml" />
 <view class="search">
   <icon type="search"></icon>
-  <input type="text" value="{{searchItem}}" focus="true"  bindconfirm="onReadyData"/>
+  <input type="text" value="{{searchKey}}" focus="true"  bindconfirm="onReadyData"/>
   <text bindtap="onSearch">搜索</text>
 </view>
 <view class="hr"></view>

@@ -7,28 +7,28 @@
 </template>
 <template is="teacherTemplate" data="{{Ctext:Cbasic}}" />
 <view class="basic">
-  <image mode="widthFix" src="{{detailData.icon}}"></image>
+  <image mode="widthFix" src="{{image}}"></image>
   <view class="basic-info">
-    <text class="tname">{{detailData.name}}    {{detailData.title}}</text>
+    <text class="tname">{{detailData.name}}    {{detailData.Title}}</text>
     <view class="package">
       <text class="provide">学位：</text>
-      <text class="info">{{detailData.education}}</text>
+      <text class="info">{{detailData.Education}}</text>
     </view>
     <view class="package">
       <text class="provide">所在院校：</text>
-      <text class="info">{{detailData.school}}</text>
+      <text class="info">{{detailData.School}}</text>
     </view>
     <view class="package">
       <text class="provide">研究方向：</text>
-      <text class="info">{{detailData.field}}</text>
+      <text class="info">{{detailData.Field}}</text>
     </view>
     <view class="package">
       <text class="provide">联系方式：</text>
-      <text class="info">{{detailData.contact}}</text>
+      <text class="info">{{detailData.Contact}}</text>
     </view>
   </view>
 </view>
-<template is="teacherTemplate" data="{{detail:detailData.introduction,Ctext:Cintro}}" />
-<template is="teacherTemplate" data="{{detail:detailData.research,Ctext:Csci}}" />
-<template is="teacherTemplate" data="{{detail:detailData.teaching,Ctext:Cteach}}" />
-<template is="teacherTemplate" data="{{detail:detailData.rewards,Ctext:Crew}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Introduction,Ctext:Cintro}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Research,Ctext:Csci}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Teaching,Ctext:Cteach}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Rewards,Ctext:Crew}}" />

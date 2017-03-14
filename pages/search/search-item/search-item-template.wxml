@@ -1,23 +1,23 @@
 <template name="itemTemplate">
-  <view class="item-container" bindtap="onDetail" data-id="{{id}}" data-mark="{{mark}}">
+  <view class="item-container" bindtap="onDetail" data-name="{{name}}" data-mark="{{mark}}">
     <view class="item-info">
-      <image class="Img" mode="aspectFit" src="{{icon}}"></image>
+      <image class="Img" mode="aspectFit" src="../../../{{icon}}"></image>
       <view class="info">
         <text class="name">{{name}}</text>
         <view wx:if="{{isUniversity}}" class="info-text">
-          <text>属性：{{property}}</text>
+          <text>属性：{{Property}}</text>
           <text>地理位置：{{location}}</text>
-          <text>类型：{{type}}</text>
+          <text>类型：{{Type}}</text>
         </view>
         <view wx:elif="{{isSchool}}" class="info-text">
-          <text>建立时间：{{establishedtime}}</text>
-          <text>所属学校：{{university}}</text>
-          <text>招生代码：{{code}}</text>
+          <text>建立时间：{{EstablishedTime}}</text>
+          <text>所属学校：{{University}}</text>
+          <text>招生代码：{{Code}}</text>
         </view>
         <view wx:elif="{{isTeacher}}" class="info-text">
-          <text>职称：{{title}}</text>
-          <text>学历：{{education}}</text>
-          <text>所属院校：{{school}}</text>
+          <text>职称：{{Title}}</text>
+          <text>学历：{{Education}}</text>
+          <text>所属院校：{{School}}</text>
         </view>
       </view>
     </view>

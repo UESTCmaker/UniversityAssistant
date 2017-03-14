@@ -1,34 +1,34 @@
 <import src="../detail-package/detail-package-template.wxml" />
-<image class="cover" src="{{detailData.image}}">
+<image class="cover" src="{{image}}">
 </image>
 <view class="cover-img-hover">
   <text class="title">{{detailData.name}}</text>
-  <text class="sub-title">{{detailData.englishname}}</text>
+  <text class="sub-title">{{detailData.EnglishName}}</text>
 </view>
-<image class="sicon" src="{{detailData.icon}}"></image>
+<image class="sicon" src="{{icon}}"></image>
 <view class="detail-container">
   <text class="name">{{detailData.name}}</text>
   <view class="package">
     <text class="provide">创办时间：</text>
-    <text class="info">{{detailData.establishedtime}}</text>
+    <text class="info">{{detailData.EstablishedTime}}</text>
   </view>
   <view class="package">
     <text class="provide">所属学校：</text>
-    <text class="info">{{detailData.university}}</text>
+    <text class="info">{{detailData.University}}</text>
   </view>
   <view class="package">
     <text class="provide">招生代码：</text>
-    <text class="info">{{detailData.code}}</text>
+    <text class="info">{{detailData.Code}}</text>
   </view>
 </view>
-<template is="packageTemplate" data="{{detail:detailData.introduction,Ctext:Cintro}}" />
-<template is="packageTemplate" data="{{detail:detailData.majors,Ctext:Cmajor}}" />
+<template is="packageTemplate" data="{{detail:detailData.Introduction,Ctext:Cintro}}" />
+<template is="packageTemplate" data="{{detail:detailData.Majors,Ctext:Cmajor}}" />
 <template is="packageTemplate" data="{{Ctext:Cteach}}" />
 <scroll-view scroll-x="true" style="width: 100% height:320rpx">
   <view class="scroll">
-    <block wx:for="{{detailData.teachers}}" wx:for-item="teacher">
+    <block wx:for="{{detailData.Teachers}}" wx:for-item="teacher">
       <view class="teacherInfo">
-        <image class="teacherImg" src="{{teacher.image}}"></image>
+        <image class="teacherImg" src="../../../{{teacher.image}}"></image>
         <text class="teacherName">{{teacher.name}}</text>
       </view>
     </block>

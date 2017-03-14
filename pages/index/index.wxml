@@ -5,7 +5,7 @@
   </view>
   <view class="search">
     <icon type="search" size="26"></icon>
-    <input class="string" type="text" placeholder="学校名/学院名/教师名" value="{{searchItem}}" placeholder-class="inputString" focus="true" bindconfirm="onInputReady"/>
+    <input class="string" type="text" placeholder="学校名/学院名/教师名" placeholder-class="inputString" focus="true" bindconfirm="onInputReady"/>
   </view>
   <button class="searchbutton" bindtap="onSearch">查询</button>
 </view>

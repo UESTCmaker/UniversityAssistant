@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="head-text">
+    <text>帮您查找</text>
+    <text>全面有效的高校信息</text>
+  </view>
+  <view class="search">
+    <icon type="search" size="26"></icon>
+    <input class="string" type="text" placeholder="学校名/学院名/教师名" value="{{searchItem}}" placeholder-class="inputString" focus="true" bindconfirm="onInputReady"/>
+  </view>
+  <button class="searchbutton" bindtap="onSearch">查询</button>
+</view>

@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/detail/school-detail/school-detail",
+    "pages/detail/university-detail/university-detail",
+    "pages/detail/teacher-detail/teacher-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6A7D8F",
+    "navigationBarTitleText": "高校查询助手",
+    "navigationBarTextStyle": "white"
+  }
+}

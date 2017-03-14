@@ -1,0 +1,16 @@
+/* pages/detail/university-detail/university-detail.wxss */
+@import "../detail-package/detail-package-template.wxss";
+@import "../school-detail/school-detail.wxss";
+
+.schools {
+  margin: 0 20rpx 20rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.schools text {
+  font-family: MicroSoft Yahei;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 20rpx;
+}
